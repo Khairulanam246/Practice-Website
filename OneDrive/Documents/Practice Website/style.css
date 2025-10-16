@@ -1,0 +1,491 @@
+@font-face {
+	font-family: defaultFont;
+	src: url('./font/Roboto-Medium.ttf');
+}
+
+@font-face {
+	font-family: defaultFontItalic;
+	src: url('./font/Roboto-MediumItalic.ttf');
+}
+
+@font-face {
+	font-family: defaultFontBoldItalic;
+	src: url('./font1/Gabriela\ Stencil\ Bold\ Italic\ [TheFontsMaster.com].otf');
+}
+
+@font-face {
+	font-family: defaultFontLight;
+	src: url('./font/Roboto-Light.ttf');
+}
+
+@font-face {
+	font-family: defaultFontBlack;
+	src: url('./font1/Gabriela\ Stencil\ Black\ [TheFontsMaster.com].otf');
+}
+
+* {
+	/* font-family: defaultFont; */
+	/* box-sizing: border-box;
+	margin: 0px;
+	padding: 0px; */
+}
+
+body {
+	/* margin: 0px;
+	padding: 0px;
+	background-image: url(images/—Pngtree—pure\ watercolor\ gradient\ colorful\ background_964413.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed; */
+}
+
+body {
+	/* margin: 0px;
+	padding: 0px;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(0deg, rgba(255, 255, 255, 1) 11%, rgba(11, 140, 132, 0.6699054621848739) 95%); */
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.header {
+	display: block;
+	font-family: defaultFontItalic;
+}
+
+.header .navbar {
+	z-index: 1000;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	position: fixed;
+	padding: 8px;
+}
+
+.menu ul {
+	margin-left: 200px;
+}
+
+.menu ul a {
+	text-decoration: none;
+	margin-left: 60px;
+	letter-spacing: 0.5px;
+	text-transform: capitalize;
+}
+
+.menu ul a.home {
+	color: #ffe550;
+}
+
+/* ul a.home {
+	background-color: #f3ef51;
+	border-radius: 30px;
+	padding: 8px 40px; */
+/* } */
+
+
+.login-btn {
+	display: block;
+	text-decoration: none;
+	border-radius: 30px;
+	cursor: pointer;
+	background-color: #FCFC69;
+	padding: 8px 40px;
+	margin-right: 90px;
+	color: black;
+	text-transform: capitalize;
+}
+
+.login-btn:hover {
+	border-radius: 30px;
+	opacity: 0.75;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a.fixed {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	background-color: #a9a9a9;
+	text-decoration: none;
+	border-radius: 30px;
+	padding: 8px 30px;
+	align-items: center;
+	opacity: 0.2;
+}
+
+a.fixed:hover {
+	background-color: #f3ef51;
+	opacity: 1;
+}
+
+.conteiner {
+	display: flex;
+	height: 100%;
+	background-color: white;
+}
+
+.conteiner-1 {
+	flex: 1;
+	margin-left: 150px;
+	background-color: #f3ef51;
+}
+
+.conteiner-1-line {
+	height: 500px;
+	position: absolute;
+	margin-top: 50px;
+	left: 100px;
+	border-left: 100px solid #5ec55e;
+}
+
+.conteiner .content-home {
+	position: relative;
+	background-color: rgb(254, 255, 247);
+	cursor: pointer;
+	transition: all 0.5s;
+	box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+	margin-left: 120px;
+	margin-top: 80px;
+	padding: 20px 80px 120px 60px;
+	width: fit-content;
+	border-radius: 15px;
+	border: 1px solid transparent;
+	z-index: 10;
+}
+
+.conteiner .content-home::before {
+	content: '';
+	position: absolute;
+	background-image: url(./images/pexels-lucas-bordignon-3021839.jpg);
+	border-radius: 15px;
+	background-size: cover;
+	top: 0px;
+	opacity: 0.25;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+}
+
+.conteiner .content-home:hover {
+	border: 1px solid yellow;
+}
+
+.conteiner .content-home p {
+	text-align: center;
+	color: rgb(66, 66, 66);
+	padding: 50px 0px 0px 0px;
+	font-size: large;
+}
+
+.container-2 {
+	flex: 1;
+}
+
+.container-2 img {
+	width: 600px;
+	padding-top: 20px;
+	padding-right: 100px;
+}
+
+.logo a {
+	width: 100%;
+}
+
+.logo img {
+	width: 50px;
+}
+
+.fa-brands.fa-youtube {
+	color: blue;
+}
+
+.conteiner-1 h1 {
+	font-family: defaultFontBlack;
+	color: #000;
+	font-size: 30px;
+	text-align: center;
+}
+
+.conteiner-1 h1 span {
+	color: red;
+}
+
+.conteiner-1 p {
+	padding-left: 160px;
+}
+
+.content1 {
+	background: rgb(182, 227, 136);
+	background: linear-gradient(125deg, rgba(182, 227, 136, 1) 35%, rgba(246, 246, 246, 1) 35%);
+	width: auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.content3 {
+	margin-top: 70px;
+	background-color: #fde03b;
+	padding-bottom: 100px;
+}
+
+/* .container2 {
+	display: flex;
+	justify-content: space-between;
+	background: #FFA500;
+	padding-bottom: 200px;
+	padding-top: 50px;
+} */
+
+.container2 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-us h1 {
+	text-align: center;
+	font-family: defaultFontBoldItalic;
+	font-size: 60px;
+	padding-top: 70px;
+}
+
+.container2-1 {
+	flex: 1/3;
+	text-align: center;
+	border: 1px solid black;
+	padding: 50px;
+	margin-top: 50px;
+	margin-left: 100px;
+}
+
+.container2-2 {
+	flex: 1/3;
+	text-align: center;
+	border: 1px solid black;
+	padding: 50px;
+	margin-top: 50px;
+}
+
+.container2-3 {
+	flex: 1/3;
+	text-align: center;
+	border: 1px solid black;
+	padding: 50px;
+	margin-top: 50px;
+	margin-right: 100px;
+}
+
+.button {
+	border-radius: 4px;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 215px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+div .container2-1 .button {
+	background: #DCAE96;
+	font-family: defaultFontItalic;
+}
+
+div .container2-2 .button {
+	background: #C8A2C8;
+	font-family: defaultFontItalic;
+}
+
+div .container2-3 .button {
+	background: #CCCCFF;
+	font-family: defaultFontItalic;
+}
+
+.container2-1 p {
+	font-family: defaultFontBoldItalic;
+	font-size: 25px;
+}
+
+.container2-2 p {
+	font-family: defaultFontBoldItalic;
+	font-size: 25px;
+}
+
+.container2-3 p {
+	font-family: defaultFontBoldItalic;
+	font-size: 25px;
+}
+
+.container3 {
+	background-color: #fff;
+	width: 100%;
+}
+
+.container3-1 {
+	padding: 150px;
+}
+
+p a {
+	text-decoration: none;
+	color: #000;
+	float: right;
+}
+
+.section-services {
+	padding-left: 160px;
+	display: block;
+}
+
+.section-services .header-services {
+	text-transform: capitalize;
+	font-size: 30px;
+	font-family: defaultFontBoldItalic;
+}
+
+.section-services .header-services h1 {
+	color: #FCFFB2;
+}
+
+/* .content-services1 {
+	flex: 1/3;
+}
+
+.content-services2 {
+	flex: 1/3;
+}
+
+.content-services3 {
+	flex: 1/3;
+} */
+
+/* .intro {
+	background-image: url(./images/christophe-rollando-Q8g-hc935FE-unsplash.jpg);
+	background-size: 100%;
+	padding-bottom: 190px;
+	background-position: center;
+} */
+
+.intro {
+	position: relative;
+	height: 100vh;
+	display: flex;
+}
+
+.intro::before {
+	content: '';
+	position: absolute;
+	background-image: url(./images/christophe-rollando-Q8g-hc935FE-unsplash.jpg);
+	background-size: cover;
+	background-position: top center;
+	opacity: 0.25;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+
+}
+
+.intro-content {
+	margin-top: 20px;
+	z-index: 500;
+	padding-top: 150px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.intro-content h1 {
+	font-size: 40px;
+	font-weight: bold;
+	opacity: 1;
+}
+
+.intro-content p {
+	font-size: 20px;
+	padding: 160px;
+	padding-top: 0px;
+	padding-bottom: 20px;
+}
+
+.button-home {
+	border-radius: 4px;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 18px;
+	padding: 5px;
+	width: 170px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	background-color: #5ec55e;
+	text-transform: capitalize;
+	font-family: defaultFontLight;
+	border: 2px solid #5ec55e;
+}
+
+.button-home:hover {
+	background-color: #d5ffd9;
+	color: #000;
+	border: 2px solid #88d488;
+	transition: all 0.5s;
+}
+
+.button-home span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button-home span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button-home:hover span {
+	padding-right: 25px;
+}
+
+.button-home:hover span:after {
+	opacity: 1;
+	right: 0;
+}
